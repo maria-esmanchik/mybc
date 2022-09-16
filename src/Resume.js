@@ -4,6 +4,8 @@ import Stack from 'react-bootstrap/Stack';
 import Badge from 'react-bootstrap/Badge';
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Stack';
+import ContactMe from './components/ContactMe';
+
 
 export default function Resume() {
     const experience = [
@@ -143,7 +145,7 @@ export default function Resume() {
                     <div>
                     <h4>Full-stack Software Engineer</h4>
                     <p class="lead">Fort Lee, NJ 07024, USA</p>
-                    <button type="button" class="btn btn-outline-secondary btn-lg px-4">Contact</button>     
+                    <ContactMe></ContactMe>
                     </div>
                     <div class="lead">
                         <h2 class="pb-2">Skills</h2>
