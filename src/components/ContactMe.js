@@ -36,11 +36,11 @@ export default function ContactMe() {
                 <div className='mt-4'>
                 <Form>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
-                    <Form.Label>Message</Form.Label>
-                    <Form.Control type="text" placeholder="Enter your message here" value={state.message}
+                    <Form.Label>Send to Maryia Yesmanchyk</Form.Label>
+                    <Form.Control as="textarea" rows={10} placeholder="Enter your message here" value={state.message}
                         onChange={(e) => setState({message: e.target.value, expanded: state.expanded})}/>
                     <Form.Text className="text-muted">
-                    Please type your message to me above.
+                    Please don't forget to put your contact information to let me get back to you.
                     </Form.Text>
                 </Form.Group>
                 <Button size="lg" variant="primary" onClick={() => sendMessage()}>
