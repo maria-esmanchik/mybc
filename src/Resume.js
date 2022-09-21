@@ -10,43 +10,61 @@ import ContactMe from './components/ContactMe';
 export default function Resume() {
     const experience = [
         {
+            company: 'Full Stack Engineer',
+            periodExp: 'September 2022 - Present',
+            activities: 'Software Development and Maintenance in C++, Java, Python, JavaScript and C#.'
+        },
+        {
             company: 'Jesmanczyk Sp. z o.o.',
+            periodExp: 'January 2017 – November 2018',
             activities: 'A joint project “Traffic Sign Detector” written in Java  for Android (Camera API, Tensorflow,' +
                         'TextToSpeech API , UI, file storage, background thread and handlers).'
         },
         {
-            company: 'Anitex',
-            activities: 'In C#(WinForms and WPF) created the applications for accounting automation of the company: ' +
-                        'Excel-to-XML accounting data converter for tax inspection and the program that extracts ' +
-                        'invoice data from the file of custom bank  text format to Excel.'
-        },
-        {
-            company: '100 ballov.by',
-            activities: 'Internship as a Lego Mindstorms teacher.'
-        },
-        {
             company: 'Freelancer',
+            periodExp: 'September 2017 - November 2018',
             activities: 'Created the Bitcoin trading bot for cex.io exchange using Spring Boot and ' +
                         'REST API. In HTML, JavaScript, Bootstrap created business card site for russian drift ' +
                         'trike entertainment company. In PHP, WordPress created visa application page for small ' +
                         'company from Belarus. Support for a small site in Drupal. For the German entrepreneur Academy.'
         },
         {
-            company: 'Full Stack Engineer',
-            activities: 'Software Development and Maintenance in C++, Java, Python, JavaScript and C#.'
+            company: 'Anitex',
+            periodExp: 'June 2016 – January 2018',
+            activities: 'In C#(WinForms and WPF) created the applications for accounting automation of the company: ' +
+                        'Excel-to-XML accounting data converter for tax inspection and the program that extracts ' +
+                        'invoice data from the file of custom bank  text format to Excel.'
+        },
+        {
+            company: '100 ballov.by',
+            periodExp: 'September 2016 – November 2016',
+            activities: 'Internship as a Lego Mindstorms teacher.'
         },
     ];
 
     const voluteeringExperience = [
         {
             company: 'Immigration period',
+            periodVolExp: 'December 2018 – September 2022',
             activities: 'It was a difficult time for me. All this time I lived here on an H4 visa without the ' +
                         'right to work. Furthemore, I moved here to live without knowing English. Therefore, I ' +
                         'spent these 3+ years on learning English and self-development.  I think it was pretty ' +
                         'productive.'
         },
         {
+            company: 'Open Source Development',
+            periodVolExp: 'May 2021 – September 2022',
+            activities: 'I joined the projects: Organic Maps,Tomcat and Netty.'
+        },
+        {
+            company: 'Web-dev consulting',
+            periodVolExp: 'August 2022 – September 2022',
+            activities: 'I was helping my entrepreneur friend to understand how work with GitHub, ' +
+                        'find a developer(-s), and get the project done.'
+        },
+        {
             company: 'Baranova27',
+            periodVolExp: 'February 2022 - August 2022',
             activities: 'I was accepting and sorting humanitarian aid for Ukraine by type. There were 5-8 people' +
                         'in my team. I had to tell how everything works here ahd check if there were sorting errors.' +
                         'Sometimes it was nessary to count the amount of packadged humanitarian aid and enter to into ' +
@@ -54,21 +72,14 @@ export default function Resume() {
         },
         {
             company: 'Razom',
+            periodVolExp: 'April 2022 - May2022',
             activities: 'Volunteer at Razom, packing humanitarian medical aid for Ukraine. Used my math ' +
                         'skills to optimize the process :).'
         },
         {
-            company: 'Web-dev consulting',
-            activities: 'I was helping my entrepreneur friend to understand how work with GitHub, ' +
-                        'find a developer(-s), and get the project done.'
-        },
-        {
             company: 'Software developer tutoring',
+            periodVolExp: 'June 2020 – September 2022',
             activities: 'I guided women who just started studying programming in how to obtain basic coding skills.'
-        },
-        {
-            company: 'Open Source Development',
-            activities: 'I joined the projects: Organic Maps,Tomcat and Netty.'
         },
     ];
     const education = [
@@ -193,6 +204,7 @@ export default function Resume() {
                             </div>
                             <div>
                             <h2>{item.company}</h2>
+                            <h6>{item.periodExp}</h6>
                             <p>{item.activities}</p>
                             </div>
                         </div>
@@ -209,6 +221,7 @@ export default function Resume() {
                             </div>
                             <div>
                             <h2>{item.company}</h2>
+                            <h6>{item.periodVolExp}</h6>
                             <p>{item.activities}</p>
                             </div>
                         </div>
