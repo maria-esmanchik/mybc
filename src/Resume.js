@@ -153,29 +153,28 @@ export default function Resume() {
 
             <div class="container px-4 py-5">
             <div class="lead row g-4 py-5 row-cols-1 row-cols-lg-2">
-                    <div>
-                    <h4>Full-stack Software Engineer</h4>
-                    <p class="lead">Fort Lee, NJ 07024, USA</p>
-                    <ContactMe></ContactMe>                   
-                    <div class="lead pt-4">
-                        <h2 class="pb-2">Skills</h2>
-                        {['Java', 'Android', 'C #', 'HTML5', 'CSS3', 'JavaScript', 'React.js', 'Next.js', 'MS SQL', 'C++', 'WinAPI', 'UML',
-                        'PHP', 'Python', 'AWS', 'Machine Learning'].map(
-                            (variant)=> (
-                                <span className="mx-1">
-                                    <Badge bg="secondary">{variant}</Badge>
-                                </span>
-                            )
-                        )}
-                        </div>
+                <div>
+                <h4>Full-stack Software Engineer</h4>
+                <p class="lead">Fort Lee, NJ 07024, USA</p>
+                <ContactMe></ContactMe> 
+                <div class="lead pt-4">
+                    <h2 class="pb-2">Skills</h2>
+                    {['Java', 'Android', 'C #', 'HTML5', 'CSS3', 'JavaScript', 'React.js', 'Next.js', 'MS SQL', 'C++', 'WinAPI', 'UML',
+                    'PHP', 'Python', 'AWS', 'Machine Learning'].map(
+                        (variant)=> (
+                            <span className="mx-1">
+                                <Badge bg="secondary">{variant}</Badge>
+                            </span>
+                        )
+                    )}
                     </div>
-                </div> 
-                <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-                <div class="col-10 col-sm-8 col-lg-6">
-                <img src="portrait.jpg" class="img-fluid" alt="Maryia Yesmanchyk" />
                 </div>
-                <div class="col-lg-6">
-    
+                <div class="col-10 col-sm-8 col-lg-6">
+                    <img src="portrait.jpg" class="img-fluid" alt="Maryia Yesmanchyk" />
+                </div>
+            </div> 
+            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                <div class="col-lg-6">    
                 <div class="lead">
                 <h2 class="pb-2 border-bottom">Education</h2>
                     {education.map(item =>(
@@ -185,11 +184,9 @@ export default function Resume() {
                             </p>
                         </div>
                     ))}               
-                </div>  
-                                      
-                                  
+                </div>                                     
                 </div>
-                </div>
+            </div>
             </div>
 
             <div class="container px-4 py-5" id="experience">
