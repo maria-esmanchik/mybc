@@ -167,28 +167,20 @@ export default function Resume() {
                             </span>
                         )
                     )}
-                    </div>
+                </div>
+                {/* <figure class="text-center mb-0 px-4 py-5">
+                    <blockquote class="blockquote">
+                        <p class="pb-3">                  
+                            <span class="lead font-italic">Passionate software engineer that tries to make world better
+                             by automation and optimization of everything and everywhere..</span>
+                        </p>
+                    </blockquote>
+                </figure> */}
                 </div>
                 <div class="col-10 col-sm-8 col-lg-6">
-                    <img src="portrait.jpg" class="img-fluid" alt="Maryia Yesmanchyk" />
+                    <img src="profileMy.jpg" class="img-fluid rounded-circle border border-primary" alt="Maryia Yesmanchyk" />
                 </div>
             </div> 
-            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-                <div class="col-lg-6">    
-                <div class="lead">
-                <h2 class="pb-2 border-bottom">Education</h2>
-                    {education.map(item =>(
-                        <div>
-                            <p>{item.nameCourse}
-                            <Badge bg="secondary">{item.period}</Badge>
-                            </p>
-                        </div>
-                    ))}               
-                </div>                                     
-                </div>
-            </div>
-            </div>
-
             <div class="container px-4 py-5" id="experience">
                 <h2 class="pb-2 border-bottom">Experience</h2>
                 <div class="lead row g-4 py-5 row-cols-1 row-cols-lg-3">
@@ -203,6 +195,22 @@ export default function Resume() {
                             </div>
                         </div>
                     ))}
+                </div>
+            </div>
+            </div>
+
+            <div class="container px-4 py-5" id="education">
+                <div class="col-lg-6">    
+                <div class="lead">
+                <h2 class="pb-2 border-bottom">Education</h2>
+                    {education.map(item =>(
+                        <div>
+                            <p>{item.nameCourse}
+                            <Badge bg="secondary">{item.period}</Badge>
+                            </p>
+                        </div>
+                    ))}               
+                </div>                                     
                 </div>
             </div>
 
