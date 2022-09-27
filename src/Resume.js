@@ -156,9 +156,8 @@ export default function Resume() {
                     <div>
                     <h4>Full-stack Software Engineer</h4>
                     <p class="lead">Fort Lee, NJ 07024, USA</p>
-                    <ContactMe></ContactMe>
-                    </div>
-                    <div class="lead">
+                    <ContactMe></ContactMe>                   
+                    <div class="lead pt-4">
                         <h2 class="pb-2">Skills</h2>
                         {['Java', 'Android', 'C #', 'HTML5', 'CSS3', 'JavaScript', 'React.js', 'Next.js', 'MS SQL', 'C++', 'WinAPI', 'UML',
                         'PHP', 'Python', 'AWS', 'Machine Learning'].map(
@@ -168,7 +167,7 @@ export default function Resume() {
                                 </span>
                             )
                         )}
-                        
+                        </div>
                     </div>
                 </div> 
                 <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
