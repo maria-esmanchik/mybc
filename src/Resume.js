@@ -168,14 +168,6 @@ export default function Resume() {
                         )
                     )}
                 </div>
-                {/* <figure class="text-center mb-0 px-4 py-5">
-                    <blockquote class="blockquote">
-                        <p class="pb-3">                  
-                            <span class="lead font-italic">Passionate software engineer that tries to make world better
-                             by automation and optimization of everything and everywhere..</span>
-                        </p>
-                    </blockquote>
-                </figure> */}
                 </div>
                 <div class="col-10 col-sm-8 col-lg-6">
                     <img src="profileMy.jpg" class="img-fluid rounded-circle border border-primary" alt="Maryia Yesmanchyk" />
@@ -183,7 +175,7 @@ export default function Resume() {
             </div> 
             <div class="container px-4 py-5" id="experience">
                 <h2 class="pb-2 border-bottom">Experience</h2>
-                <div class="lead row g-4 py-5 row-cols-1 row-cols-lg-3">
+                <div class="lead row row-cols-1 row-cols-lg-3">
                     {experience.map(item => (
                         <div class="col d-flex align-items-start">
                             <div class="icon-square text-bg-light d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3 py-2">
